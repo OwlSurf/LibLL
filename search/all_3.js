@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mcreate_5flist_0',['mCREATE_LIST',['../LibLL_8h.html#acb779a9c93788ab264eb4e4c7e26b0a8',1,'LibLL.h']]]
+  ['brief_3a_0',['Brief:',['../md_description_8en.html#autotoc_md1',1,'Brief:'],['../md_README.html#autotoc_md16',1,'Brief:']]],
+  ['build_20tests_1',['How to build tests.',['../md_description_8en.html#autotoc_md5',1,'']]]
 ];
