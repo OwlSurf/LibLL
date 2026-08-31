@@ -40,8 +40,8 @@ extern struct stub_node Stub;
 
 
 #define mINIT_NODE(node)\
-	node->next = node;\
-	node->prev = node;
+	(node)->next = (node);\
+	(node)->prev = (node);
 
 #define mISOLATED_NODE(node)\
 	((node)->next == (node) && (node)->prev == (node))
