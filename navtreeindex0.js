@@ -64,5 +64,6 @@ var NAVTREEINDEX0 =
 "struct__node.html":[3,0,0],
 "struct__node.html#a1cf2f32ddf62dd25aeefd2fa32701663":[3,0,0,0],
 "struct__node.html#a5c834449a02de0cc261710d4b2783fd5":[3,0,0,1],
-"structstub__node.html":[3,0,1]
+"structstub__node.html":[3,0,1],
+"structtagged__node.html":[3,0,2]
 };

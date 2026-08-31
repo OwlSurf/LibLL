@@ -140,6 +140,8 @@ Macros</h2></td></tr>
 <tr class="separator:acb779a9c93788ab264eb4e4c7e26b0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a692790d9106357a0fe213bdfed905445" id="r_a692790d9106357a0fe213bdfed905445"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a692790d9106357a0fe213bdfed905445">mINIT_NODE</a>(node)</td></tr>
 <tr class="separator:a692790d9106357a0fe213bdfed905445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85832a8a3cfad4ecd2ff97664c5fcee4" id="r_a85832a8a3cfad4ecd2ff97664c5fcee4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85832a8a3cfad4ecd2ff97664c5fcee4">mISOLATED_NODE</a>(node)</td></tr>
+<tr class="separator:a85832a8a3cfad4ecd2ff97664c5fcee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -246,6 +248,24 @@ struct <a class="el" href="structstub__node.html">stub_node</a>&#160;</td><td cl
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    node-&gt;next = node;\</div>
 <div class="line">    node-&gt;prev = node;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85832a8a3cfad4ecd2ff97664c5fcee4" name="a85832a8a3cfad4ecd2ff97664c5fcee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85832a8a3cfad4ecd2ff97664c5fcee4">&#9670;&#160;</a></span>mISOLATED_NODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define mISOLATED_NODE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    ((node)-&gt;next == (node) &amp;&amp; (node)-&gt;prev == (node))</div>
 </div><!-- fragment -->
 </div>
 </div>
