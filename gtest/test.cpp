@@ -32,6 +32,7 @@ TEST(Connect, TwoStaticNodes)
 	NODE* f = &first;
 	NODE* s = &second;
 	mINIT_NODE(f);
+	mINIT_NODE(s);
 	mCREATE_LIST(test_list, test_tmp);
 
 	LL_Connect(&test_list, f, &test_tmp);
