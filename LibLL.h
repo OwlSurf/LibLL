@@ -43,6 +43,9 @@ extern struct stub_node Stub;
 	node->next = node;\
 	node->prev = node;
 
+#define mISOLATED_NODE(node)\
+	((node)->next == (node) && (node)->prev == (node))
+
 /*! A NODE type for linked list*/ 
 typedef struct _node
 {	
