@@ -12,9 +12,9 @@
 #include "LibLL.h"
 
 #ifdef DEBUG
-#define DEBUG_PRINT(...); printf(__VA_ARGS__);
+#define DEBUG_PRINT(...) printf(__VA_ARGS__)
 #else
-#define DEBUG_PRINT(...);
+#define DEBUG_PRINT(...)
 #endif
 
 static void StubAction(NODE *node);
@@ -35,6 +35,11 @@ struct stub_node Stub =
 	.pStubAction = StubAction
 };
 
+static bool LL_Is_Isolated(NODE* node)
+{
+	return mISOLATED_NODE(node);
+}
+
 static void StubAction(NODE* node)
 {
 	DEBUG_PRINT("List is empty ...\n");
@@ -50,14 +55,19 @@ void LL_Connect(NODE** List, NODE* node, NODE** tmp)
 	if (NULL == node) {
 		return;
 	}
+	if (!LL_Is_Isolated(node)) {
+		return;
+	}
 	if (NULL == List) {
 		return;
-	} else {
-		if ((NULL == *List)) {
-			return;
-		}
+	}
+	if (NULL == *List) {
+		return;
 	}
 	if (*List == (NODE*)&Stub) {
+		if (NULL == tmp) {
+			return;
+		}
 		*List = node;
 		*tmp = *List;
 		node->next = node;
@@ -76,7 +86,7 @@ void LL_Connect(NODE** List, NODE* node, NODE** tmp)
 
 void LL_Insert(NODE* node, NODE* insert_node, NODE** tmp)
 {
-	if ((NULL == node)) {
+	if (NULL == node) {
 		return;
 	}
 	if (NULL == tmp) {
@@ -86,6 +96,9 @@ void LL_Insert(NODE* node, NODE* insert_node, NODE** tmp)
 		return;
 	}
 	if (NULL == insert_node) {
+		return;
+	}
+	if (!LL_Is_Isolated(insert_node)) {
 		return;
 	}
 	if (node->next == *tmp) {
@@ -99,7 +112,7 @@ void LL_Insert(NODE* node, NODE* insert_node, NODE** tmp)
 
 void LL_Disconnect(NODE** List, NODE* node, NODE** tmp)
 {
-	if ((NULL == node)) {
+	if (NULL == node) {
 		return;
 	}
 	if (NULL == List) {
@@ -109,13 +122,15 @@ void LL_Disconnect(NODE** List, NODE* node, NODE** tmp)
 		return;
 	}
 
-	if (node == *tmp) {
-				*tmp = node->next;
+	if ((NULL != tmp) && (node == *tmp)) {
+		*tmp = node->next;
 	}
 
 	if (node == *List) {					     // The node is the first in the list.
 		if (node->next == *List) {				 // Only one node in the list.
-		    *tmp = (NODE*)&Stub;
+		    if (NULL != tmp) {
+		    	*tmp = (NODE*)&Stub;
+		    }
 		    *List = (NODE*)&Stub;
 		    Stub.pStubAction = StubAction;
 		    return;
@@ -137,6 +152,9 @@ void LL_Disconnect(NODE** List, NODE* node, NODE** tmp)
 
 void LL_Disconnect_First(NODE** List, NODE** deleted_node, NODE** tmp)
 {
+	if (NULL == deleted_node) {
+		return;
+	}
 	if (NULL == List) {
 		*deleted_node = NULL;
 		return;
@@ -216,38 +234,35 @@ void LL_Clear_List(NODE** List)
 {
 	if (NULL == List) {
 		return;
-	} else {
-		if (NULL == *List) {
-			return;
-		}
 	}
-	static NODE* del_node = 0;
-	uint16_t cnt = 1;
+	if (NULL == *List) {
+		return;
+	}
+	NODE* del_node = NULL;
 	DEBUG_PRINT("List deleted:\r\n");
 	while (*List != (NODE*)&Stub)
 	{
-		LL_Disconnect_First(List, &del_node, 0);
+		LL_Disconnect_First(List, &del_node, NULL);
 		free(del_node);
-		cnt++;
 	}
 	return;
 }
 
 NODE* LL_Find(NODE* start_node, enum dir direction, bool (*pCheckSign)(void* obj, va_list args), ...)
 {
+	NODE* found = NULL;
+	va_list args;
+
 	if (NULL == start_node) {
 		return NULL;
-	} if (NULL == pCheckSign) {
-		return NULL;
 	}
-	NODE* node = start_node;
-	va_list args;
-	va_start(args, pCheckSign);
-
 	if (NULL == pCheckSign) {
 		return NULL;
 	}
 
+	va_start(args, pCheckSign);
+
+	NODE* node = start_node;
 	do {
 		if (direction == Next) {
 			node = node->next;
@@ -256,24 +271,31 @@ NODE* LL_Find(NODE* start_node, enum dir direction, bool (*pCheckSign)(void* obj
 			node = node->prev;
 		}
 		if (pCheckSign((void*)node, args)) {
-			return node;
+			found = node;
+			break;
 		}
 	} while (node != start_node);
+
 	va_end(args);
-	return NULL;
+	return found;
 }
 
 void LL_ForEach(NODE** list, NODE* (*pAction)(NODE* node), NODE** tmp)
 {
 	if (NULL == list) {
 		return;
-	} if (NULL == pAction) {
+	}
+	if (NULL == pAction) {
 		return;
 	}
 
 	if (*list == (NODE*)&Stub) {
           Stub.pStubAction((NODE*)&Stub);
           return;
+	}
+
+	if (NULL == tmp) {
+		return;
 	}
 
 	NODE* node = *list;
