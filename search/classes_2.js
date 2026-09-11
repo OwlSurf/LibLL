@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tagged_5fnode_0',['tagged_node',['../structtagged__node.html',1,'']]]
+  ['stub_5fnode_0',['stub_node',['../structstub__node.html',1,'']]]
 ];

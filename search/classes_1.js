@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stub_5fnode_0',['stub_node',['../structstub__node.html',1,'']]]
+  ['job_0',['Job',['../structJob.html',1,'']]]
 ];

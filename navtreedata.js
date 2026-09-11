@@ -45,9 +45,17 @@ var NAVTREE =
       [ "Как собрать тесты.", "md_description_8ru.html#autotoc_md13", null ],
       [ "Как пользоваться:", "md_description_8ru.html#autotoc_md14", null ]
     ] ],
-    [ "Linked List Library", "md_README.html", [
-      [ "Status:", "md_README.html#autotoc_md15", null ],
-      [ "Brief:", "md_README.html#autotoc_md16", null ]
+    [ "LibLL", "md_README.html", [
+      [ "Why LibLL", "md_README.html#autotoc_md17", null ],
+      [ "Quick start", "md_README.html#autotoc_md19", null ],
+      [ "Build", "md_README.html#autotoc_md21", [
+        [ "As a CMake dependency (FetchContent)", "md_README.html#autotoc_md22", null ],
+        [ "Drop-in", "md_README.html#autotoc_md23", null ]
+      ] ],
+      [ "Examples", "md_README.html#autotoc_md25", null ],
+      [ "Pitfalls", "md_README.html#autotoc_md27", null ],
+      [ "API overview", "md_README.html#autotoc_md29", null ],
+      [ "License", "md_README.html#autotoc_md31", null ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
