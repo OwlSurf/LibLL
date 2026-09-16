@@ -54,3 +54,10 @@ dkms.conf
 # Build trees
 build/
 gtest/build/
+
+# Generated Doxygen HTML (sources kept)
+docs/**
+!docs/mainpage.md
+!docs/_config.yml
+!docs/.keep
+

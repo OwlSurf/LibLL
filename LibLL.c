@@ -1,28 +1,34 @@
 /**
 * \file    LibLL.c
-* \brief   Linked list library implementation.
-*	
-* Abbreviations:
-* LL - Linked list.
-*	
+* \brief   LibLL implementation — circular intrusive list operations.
+*
+* Abbreviations: LL = Linked list.
+*
 * \author    Roman Garanin
 * \copyright Roman Garanin
 */
 
 #include "LibLL.h"
 
+/** \cond INTERNAL */
 #ifdef DEBUG
 #define DEBUG_PRINT(...) printf(__VA_ARGS__)
 #else
 #define DEBUG_PRINT(...)
 #endif
+/** \endcond */
 
 static void StubAction(NODE *node);
 static void StubEmptyAction(NODE *node);
+
+/**
+ * \brief Internal empty-list sentinel storage.
+ * \details An empty list head points at #Stub. Not for direct use by applications.
+ */
 struct stub_node
 {
-	NODE node;
-	void (*pStubAction)(NODE* node);
+	NODE node;                         /**< Circular self-links when the list is empty. */
+	void (*pStubAction)(NODE* node);   /**< Optional empty-list callback used by #LL_ForEach. */
 };
 
 struct stub_node Stub =
