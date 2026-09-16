@@ -51,5 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Test build
-gtest/build
+# Build trees
+build/
+gtest/build/
