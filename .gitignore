@@ -59,5 +59,6 @@ gtest/build/
 docs/**
 !docs/mainpage.md
 !docs/_config.yml
-!docs/.keep
+!docs/doxygen-awesome/
+!docs/doxygen-awesome/**
 
