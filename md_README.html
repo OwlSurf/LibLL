@@ -108,8 +108,8 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md15"></a></p>
 <p><a href="https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml"><img src="https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml/badge.svg" alt="CMakeGoogletest" style="pointer-events: none;" class="inline"/></a> <a href="https://www.codefactor.io/repository/github/owlsurf/libll"><img src="https://www.codefactor.io/repository/github/owlsurf/libll/badge" alt="CodeFactor" class="inline"/></a></p>
-<p><b>Intrusive circular doubly-linked lists for C</b> — no heap inside the library, static or dynamic nodes, safe iteration while modifying.</p>
-<p>Built for embedded / bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.</p>
+<p><b>EN:</b> Embedded circular doubly-linked lists for C (intrusive) — no heap inside the library, static or dynamic nodes, safe iteration while modifying. For bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.</p>
+<p><b>RU:</b> Встраиваемые кольцевые двусвязные списки на C (intrusive) — без выделения памяти внутри библиотеки, узлы статические или динамические, безопасный обход при изменении списка. Для bare-metal и системного кода, где объекты уже существуют (пулы, BSS, арены), а список только связывает указатели.</p>
 <p><a class="el" href="md_description_8en.html">Full docs (EN)</a> · <a class="el" href="md_description_8ru.html">Документация (RU)</a> · <a href="https://owlsurf.github.io/LibLL/">Doxygen</a></p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md17"></a>
@@ -192,7 +192,7 @@ Examples</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Example   </th><th class="markdownTableHeadNone">What it shows    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="examples/static_tasks.c"><code>examples/static_tasks.c</code></a>   </td><td class="markdownTableBodyNone">Static intrusive objects, iterate, disconnect    </td></tr>
+<td class="markdownTableBodyNone"><a href="examples/static_tasks.c"><code>examples/static_tasks.c</code></a>   </td><td class="markdownTableBodyNone">Static embedded objects (intrusive), iterate, disconnect    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="examples/ready_blocked.c"><code>examples/ready_blocked.c</code></a>   </td><td class="markdownTableBodyNone">Move a job between ready / blocked queues   </td></tr>
 </table>
