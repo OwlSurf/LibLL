@@ -3,9 +3,9 @@
 [![CMakeGoogletest](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml/badge.svg)](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/owlsurf/libll/badge)](https://www.codefactor.io/repository/github/owlsurf/libll)
 
-**Intrusive circular doubly-linked lists for C** — no heap inside the library, static or dynamic nodes, safe iteration while modifying.
+**EN:** Embedded circular doubly-linked lists for C (intrusive) — no heap inside the library, static or dynamic nodes, safe iteration while modifying. For bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.
 
-Built for embedded / bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.
+**RU:** Встраиваемые кольцевые двусвязные списки на C (intrusive) — без выделения памяти внутри библиотеки, узлы статические или динамические, безопасный обход при изменении списка. Для bare-metal и системного кода, где объекты уже существуют (пулы, BSS, арены), а список только связывает указатели.
 
 [Full docs (EN)](description.en.md) · [Документация (RU)](description.ru.md) · [Doxygen](https://owlsurf.github.io/LibLL/)
 
@@ -95,7 +95,7 @@ Copy `LibLL.c` + `LibLL.h` into your tree and compile `LibLL.c` with the rest of
 
 | Example | What it shows |
 |---------|----------------|
-| [`examples/static_tasks.c`](examples/static_tasks.c) | Static intrusive objects, iterate, disconnect |
+| [`examples/static_tasks.c`](examples/static_tasks.c) | Static embedded objects (intrusive), iterate, disconnect |
 | [`examples/ready_blocked.c`](examples/ready_blocked.c) | Move a job between ready / blocked queues |
 
 ---

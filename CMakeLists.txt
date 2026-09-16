@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 
 project(LibLL
     VERSION 0.1.0
-    DESCRIPTION "Intrusive circular doubly-linked list for C (embedded-friendly)"
+    DESCRIPTION "Embedded circular doubly-linked list for C (intrusive)"
     LANGUAGES C
 )
 

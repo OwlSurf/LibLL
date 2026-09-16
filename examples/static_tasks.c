@@ -1,5 +1,5 @@
 /**
- * Example: static intrusive task list (no malloc).
+ * Example: static embedded task list (intrusive, no malloc).
  *
  * Typical embedded pattern: objects live in a pool / BSS, NODE is the
  * first field, lists only rearrange pointers.

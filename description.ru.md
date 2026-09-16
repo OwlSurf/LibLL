@@ -5,7 +5,7 @@ Linked List Library
 [![CMakeGoogletest](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml/badge.svg)](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml)
 ## Краткое описание:
 
-Библиотека для создания связных списков и управления ими.
+Встраиваемые кольцевые двусвязные списки на C (intrusive) — без выделения памяти внутри библиотеки, узлы статические или динамические, безопасный обход при изменении списка. Для bare-metal и системного кода, где объекты уже существуют (пулы, BSS, арены), а список только связывает указатели.
 
 [Документация](https://owlsurf.github.io/LibLL/) (Doxygen)
 

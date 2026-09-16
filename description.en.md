@@ -5,7 +5,7 @@ Linked List Library
 [![CMakeGoogletest](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml/badge.svg)](https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml)
 ## Brief:
 
-A basic linked list designed for creating more complex linked lists.
+Embedded circular doubly-linked lists for C (intrusive) — no heap inside the library, static or dynamic nodes, safe iteration while modifying. For bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.
 
 [Documentation](https://owlsurf.github.io/LibLL/)
 
