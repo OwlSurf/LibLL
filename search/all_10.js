@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quick_20start_0',['Quick start',['../md_README.html#autotoc_md19',1,'']]]
+  ['tagged_5fnode_0',['tagged_node',['../structtagged__node.html',1,'']]],
+  ['task_1',['Task',['../structTask.html',1,'']]]
 ];

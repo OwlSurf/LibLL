@@ -25,37 +25,31 @@
 var NAVTREE =
 [
   [ "Linked List Library", "index.html", [
-    [ "Linked List Library", "md_description_8en.html", [
-      [ "Status:", "md_description_8en.html#autotoc_md0", null ],
-      [ "Brief:", "md_description_8en.html#autotoc_md1", null ],
-      [ "Contents:", "md_description_8en.html#autotoc_md2", null ],
-      [ "Terms and definitions:", "md_description_8en.html#autotoc_md3", null ],
-      [ "Description:", "md_description_8en.html#autotoc_md4", null ],
-      [ "How to build tests.", "md_description_8en.html#autotoc_md5", null ],
-      [ "How to use(sketch):", "md_description_8en.html#autotoc_md6", null ]
-    ] ],
-    [ "Linked List Library", "md_description_8ru.html", [
-      [ "Статус:", "md_description_8ru.html#autotoc_md7", null ],
-      [ "Краткое описание:", "md_description_8ru.html#autotoc_md8", null ],
-      [ "Содержание:", "md_description_8ru.html#autotoc_md9", [
-        [ "Внимание!:", "md_description_8ru.html#autotoc_md10", null ]
-      ] ],
-      [ "Термины и определения:", "md_description_8ru.html#autotoc_md11", null ],
-      [ "Описание:", "md_description_8ru.html#autotoc_md12", null ],
-      [ "Как собрать тесты.", "md_description_8ru.html#autotoc_md13", null ],
-      [ "Как пользоваться:", "md_description_8ru.html#autotoc_md14", null ]
-    ] ],
     [ "LibLL", "md_README.html", [
-      [ "Why LibLL", "md_README.html#autotoc_md17", null ],
-      [ "Quick start", "md_README.html#autotoc_md19", null ],
-      [ "Build", "md_README.html#autotoc_md21", [
-        [ "As a CMake dependency (FetchContent)", "md_README.html#autotoc_md22", null ],
-        [ "Drop-in", "md_README.html#autotoc_md23", null ]
+      [ "English", "md_README.html#autotoc_md2", [
+        [ "Why LibLL", "md_README.html#autotoc_md3", null ],
+        [ "Quick start", "md_README.html#autotoc_md4", null ],
+        [ "Build", "md_README.html#autotoc_md5", [
+          [ "As a CMake dependency (FetchContent)", "md_README.html#autotoc_md6", null ],
+          [ "Drop-in", "md_README.html#autotoc_md7", null ]
+        ] ],
+        [ "Examples", "md_README.html#autotoc_md8", null ],
+        [ "Pitfalls", "md_README.html#autotoc_md9", null ],
+        [ "API overview", "md_README.html#autotoc_md10", null ],
+        [ "License", "md_README.html#autotoc_md11", null ]
       ] ],
-      [ "Examples", "md_README.html#autotoc_md25", null ],
-      [ "Pitfalls", "md_README.html#autotoc_md27", null ],
-      [ "API overview", "md_README.html#autotoc_md29", null ],
-      [ "License", "md_README.html#autotoc_md31", null ]
+      [ "Русский", "md_README.html#autotoc_md13", [
+        [ "Зачем LibLL", "md_README.html#autotoc_md14", null ],
+        [ "Быстрый старт", "md_README.html#autotoc_md15", null ],
+        [ "Сборка", "md_README.html#autotoc_md16", [
+          [ "Как зависимость CMake (FetchContent)", "md_README.html#autotoc_md17", null ],
+          [ "Drop-in", "md_README.html#autotoc_md18", null ]
+        ] ],
+        [ "Примеры", "md_README.html#autotoc_md19", null ],
+        [ "Подводные камни", "md_README.html#autotoc_md20", null ],
+        [ "Обзор API", "md_README.html#autotoc_md21", null ],
+        [ "Лицензия", "md_README.html#autotoc_md22", null ]
+      ] ]
     ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],

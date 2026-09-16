@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['libll_0',['LibLL',['../md_README.html',1,'LibLL'],['../md_README.html#autotoc_md17',1,'Why LibLL']]],
-  ['libll_2ec_1',['LibLL.c',['../LibLL_8c.html',1,'']]],
-  ['libll_2eh_2',['LibLL.h',['../LibLL_8h.html',1,'']]],
-  ['library_3',['Library',['../md_description_8en.html',1,'Linked List Library'],['../md_description_8ru.html',1,'Linked List Library']]],
-  ['license_4',['License',['../md_README.html#autotoc_md31',1,'']]],
-  ['linked_20list_20library_5',['Linked List Library',['../md_description_8en.html',1,'Linked List Library'],['../md_description_8ru.html',1,'Linked List Library']]],
-  ['list_20library_6',['List Library',['../md_description_8en.html',1,'Linked List Library'],['../md_description_8ru.html',1,'Linked List Library']]],
-  ['ll_5fchange_5flist_7',['LL_Change_List',['../LibLL_8c.html#a87970dc9c75edeeab8ac03eb63452baf',1,'LL_Change_List(NODE **SrcList, NODE **DestList, NODE *node, NODE **s_tmp, NODE **d_tmp):&#160;LibLL.c'],['../LibLL_8h.html#ad6ea3c82c6889bf9243d08b4791adecf',1,'LL_Change_List(NODE **SrcList, NODE **DestList, NODE *node, NODE **sl_tmp, NODE **dl_tmp):&#160;LibLL.c']]],
-  ['ll_5fchange_5flist_5finsert_8',['LL_Change_List_Insert',['../LibLL_8c.html#a84a82de5aa962aa5de7c2239dff19a16',1,'LL_Change_List_Insert(NODE **SrcList, NODE *insert_after, NODE *node, NODE **s_tmp, NODE **d_tmp):&#160;LibLL.c'],['../LibLL_8h.html#aad6721b68c56a0794ad1cc2889dd622c',1,'LL_Change_List_Insert(NODE **SrcList, NODE *insert_after, NODE *node, NODE **sl_tmp, NODE **dl_tmp):&#160;LibLL.c']]],
-  ['ll_5fclear_5flist_9',['LL_Clear_List',['../LibLL_8c.html#a2659814c359a3f001fdc7701e5515bbb',1,'LL_Clear_List(NODE **List):&#160;LibLL.c'],['../LibLL_8h.html#a2659814c359a3f001fdc7701e5515bbb',1,'LL_Clear_List(NODE **List):&#160;LibLL.c']]],
-  ['ll_5fconnect_10',['LL_Connect',['../LibLL_8c.html#a8274f49f06aa1cf53309da647eb4b06f',1,'LL_Connect(NODE **List, NODE *node, NODE **tmp):&#160;LibLL.c'],['../LibLL_8h.html#a8274f49f06aa1cf53309da647eb4b06f',1,'LL_Connect(NODE **List, NODE *node, NODE **tmp):&#160;LibLL.c']]],
-  ['ll_5fdisconnect_11',['LL_Disconnect',['../LibLL_8c.html#a4dace3d699f8e0e8eccc721ef5b64c21',1,'LL_Disconnect(NODE **List, NODE *node, NODE **tmp):&#160;LibLL.c'],['../LibLL_8h.html#a4dace3d699f8e0e8eccc721ef5b64c21',1,'LL_Disconnect(NODE **List, NODE *node, NODE **tmp):&#160;LibLL.c']]],
-  ['ll_5fdisconnect_5ffirst_12',['LL_Disconnect_First',['../LibLL_8c.html#a6a39a1c6328eb13c0c6166fb13d1e43c',1,'LL_Disconnect_First(NODE **List, NODE **deleted_node, NODE **tmp):&#160;LibLL.c'],['../LibLL_8h.html#a6a39a1c6328eb13c0c6166fb13d1e43c',1,'LL_Disconnect_First(NODE **List, NODE **deleted_node, NODE **tmp):&#160;LibLL.c']]],
-  ['ll_5ffind_13',['LL_Find',['../LibLL_8c.html#ab9dbdec177ff191a766d28a90e2d9ba4',1,'LL_Find(NODE *start_node, enum dir direction, bool(*pCheckSign)(void *obj, va_list args),...):&#160;LibLL.c'],['../LibLL_8h.html#ab9dbdec177ff191a766d28a90e2d9ba4',1,'LL_Find(NODE *start_node, enum dir direction, bool(*pCheckSign)(void *obj, va_list args),...):&#160;LibLL.c']]],
-  ['ll_5fforeach_14',['LL_ForEach',['../LibLL_8c.html#a22eddbec2ce1ca0eac1d7385558044e6',1,'LL_ForEach(NODE **list, NODE *(*pAction)(NODE *node), NODE **tmp):&#160;LibLL.c'],['../LibLL_8h.html#a22eddbec2ce1ca0eac1d7385558044e6',1,'LL_ForEach(NODE **list, NODE *(*pAction)(NODE *node), NODE **tmp):&#160;LibLL.c']]],
-  ['ll_5finsert_15',['LL_Insert',['../LibLL_8c.html#a0d58c85ad363abb9b05062ab5e48c1cf',1,'LL_Insert(NODE *node, NODE *insert_node, NODE **tmp):&#160;LibLL.c'],['../LibLL_8h.html#a0d58c85ad363abb9b05062ab5e48c1cf',1,'LL_Insert(NODE *node, NODE *insert_node, NODE **tmp):&#160;LibLL.c']]]
+  ['next_0',['next',['../struct__node.html#a1cf2f32ddf62dd25aeefd2fa32701663',1,'_node']]],
+  ['node_1',['NODE',['../LibLL_8h.html#a5f14e6a5184581501c20bdc6013732eb',1,'LibLL.h']]]
 ];

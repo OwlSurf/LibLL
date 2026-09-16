@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['next_0',['next',['../struct__node.html#a1cf2f32ddf62dd25aeefd2fa32701663',1,'_node']]],
-  ['node_1',['NODE',['../LibLL_8h.html#a5f14e6a5184581501c20bdc6013732eb',1,'LibLL.h']]]
+  ['pitfalls_0',['Pitfalls',['../md_README.html#autotoc_md9',1,'']]],
+  ['prev_1',['prev',['../struct__node.html#a5c834449a02de0cc261710d4b2783fd5',1,'_node']]]
 ];

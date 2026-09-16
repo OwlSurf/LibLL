@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: ":_abcdefhijlmnopqstuwвикопст",
+  0: "_abcdefijlmnopqstwбзклопрс",
   1: "_jst",
   2: "l",
   3: "l",

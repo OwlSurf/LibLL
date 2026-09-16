@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fetchcontent_0',['As a CMake dependency (FetchContent)',['../md_README.html#autotoc_md22',1,'']]]
+  ['in_0',['in',['../md_README.html#autotoc_md7',1,'Drop-in'],['../md_README.html#autotoc_md18',1,'Drop-in']]]
 ];

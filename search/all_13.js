@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['use_20sketch_20_3a_0',['How to use(sketch):',['../md_description_8en.html#autotoc_md6',1,'']]]
+  ['зачем_20libll_0',['Зачем LibLL',['../md_README.html#autotoc_md14',1,'']]],
+  ['зависимость_20cmake_20fetchcontent_1',['Как зависимость CMake (FetchContent)',['../md_README.html#autotoc_md17',1,'']]]
 ];

@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['tagged_5fnode_0',['tagged_node',['../structtagged__node.html',1,'']]],
-  ['task_1',['Task',['../structTask.html',1,'']]],
-  ['terms_20and_20definitions_3a_2',['Terms and definitions:',['../md_description_8en.html#autotoc_md3',1,'']]],
-  ['tests_3',['How to build tests.',['../md_description_8en.html#autotoc_md5',1,'']]],
-  ['to_20build_20tests_4',['How to build tests.',['../md_description_8en.html#autotoc_md5',1,'']]],
-  ['to_20use_20sketch_20_3a_5',['How to use(sketch):',['../md_description_8en.html#autotoc_md6',1,'']]]
+  ['быстрый_20старт_0',['Быстрый старт',['../md_README.html#autotoc_md15',1,'']]]
 ];

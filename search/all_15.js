@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['внимание_20_3a_0',['Внимание!:',['../md_description_8ru.html#autotoc_md10',1,'']]]
+  ['лицензия_0',['Лицензия',['../md_README.html#autotoc_md22',1,'']]]
 ];

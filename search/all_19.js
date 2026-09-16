@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['пользоваться_3a_0',['Как пользоваться:',['../md_description_8ru.html#autotoc_md14',1,'']]]
+  ['сборка_0',['Сборка',['../md_README.html#autotoc_md16',1,'']]],
+  ['старт_1',['Быстрый старт',['../md_README.html#autotoc_md15',1,'']]]
 ];

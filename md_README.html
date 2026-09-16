@@ -106,14 +106,15 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">LibLL</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md15"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <p><a href="https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml"><img src="https://github.com/OwlSurf/LibLL/actions/workflows/cmake.yml/badge.svg" alt="CMakeGoogletest" style="pointer-events: none;" class="inline"/></a> <a href="https://www.codefactor.io/repository/github/owlsurf/libll"><img src="https://www.codefactor.io/repository/github/owlsurf/libll/badge" alt="CodeFactor" class="inline"/></a></p>
-<p><b>EN:</b> Embedded circular doubly-linked lists for C (intrusive) — no heap inside the library, static or dynamic nodes, safe iteration while modifying. For bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.</p>
-<p><b>RU:</b> Встраиваемые кольцевые двусвязные списки на C (intrusive) — без выделения памяти внутри библиотеки, узлы статические или динамические, безопасный обход при изменении списка. Для bare-metal и системного кода, где объекты уже существуют (пулы, BSS, арены), а список только связывает указатели.</p>
-<p><a class="el" href="md_description_8en.html">Full docs (EN)</a> · <a class="el" href="md_description_8ru.html">Документация (RU)</a> · <a href="https://owlsurf.github.io/LibLL/">Doxygen</a></p>
+<p><a href="https://owlsurf.github.io/LibLL/">Doxygen</a></p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md17"></a>
-Why LibLL</h1>
+<h1><a class="anchor" id="autotoc_md2"></a>
+English</h1>
+<p>Embedded circular doubly-linked lists for C (intrusive) — no heap inside the library, static or dynamic nodes, safe iteration while modifying. For bare-metal and systems code where objects already exist (pools, BSS, arenas) and the list only wires pointers.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Why LibLL</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Need   </th><th class="markdownTableHeadNone">LibLL    </th></tr>
@@ -129,9 +130,8 @@ Why LibLL</h1>
 <td class="markdownTableBodyNone">Move a node between queues   </td><td class="markdownTableBodyNone"><code>LL_Change_List</code>   </td></tr>
 </table>
 <p>Similar idea to Linux kernel <code>list.h</code>, in a small standalone library with tests.</p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md19"></a>
-Quick start</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Quick start</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="LibLL_8h.html">LibLL.h</a>&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
@@ -161,17 +161,16 @@ Quick start</h1>
 <li>Give <b>each</b> list its own <code>tmp</code> cursor (<code>mCREATE_LIST</code> does that).</li>
 <li><code>Connect</code> ≠ allocate. <code>Disconnect</code> ≠ <code>free</code>.</li>
 </ol>
-<hr  />
-<h1><a class="anchor" id="autotoc_md21"></a>
-Build</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Build</h2>
 <div class="fragment"><div class="line">cmake -S . -B build -DLIBLL_BUILD_EXAMPLES=ON -DLIBLL_BUILD_TESTS=ON</div>
 <div class="line">cmake --build build</div>
 <div class="line">ctest --test-dir build --output-on-failure</div>
 </div><!-- fragment --><p>Run examples:</p>
 <div class="fragment"><div class="line">./build/examples/static_tasks</div>
 <div class="line">./build/examples/ready_blocked</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md22"></a>
-As a CMake dependency (FetchContent)</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+As a CMake dependency (FetchContent)</h3>
 <div class="fragment"><div class="line">include(FetchContent)</div>
 <div class="line">FetchContent_Declare(libll</div>
 <div class="line">    GIT_REPOSITORY https://github.com/OwlSurf/LibLL.git</div>
@@ -182,12 +181,11 @@ As a CMake dependency (FetchContent)</h2>
 <div class="line">FetchContent_MakeAvailable(libll)</div>
 <div class="line"> </div>
 <div class="line">target_link_libraries(your_app PRIVATE LibLL::LibLL)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md23"></a>
-Drop-in</h2>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+Drop-in</h3>
 <p>Copy <code><a class="el" href="LibLL_8c.html" title="Linked list library implementation.">LibLL.c</a></code> + <code><a class="el" href="LibLL_8h.html" title="Linked list library implementation.">LibLL.h</a></code> into your tree and compile <code><a class="el" href="LibLL_8c.html" title="Linked list library implementation.">LibLL.c</a></code> with the rest of the firmware.</p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md25"></a>
-Examples</h1>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Examples</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Example   </th><th class="markdownTableHeadNone">What it shows    </th></tr>
@@ -196,9 +194,8 @@ Examples</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="examples/ready_blocked.c"><code>examples/ready_blocked.c</code></a>   </td><td class="markdownTableBodyNone">Move a job between ready / blocked queues   </td></tr>
 </table>
-<hr  />
-<h1><a class="anchor" id="autotoc_md27"></a>
-Pitfalls</h1>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Pitfalls</h2>
 <ul>
 <li><b>Already linked node</b> — <code>LL_Connect</code> / <code>LL_Insert</code> reject nodes that are not isolated (<code>next</code>/<code>prev</code> ≠ self). Always <code>mINIT_NODE</code> (or disconnect) first.</li>
 <li><b>One <code>tmp</code> per list</b> — sharing cursors across lists corrupts iteration during insert/disconnect.</li>
@@ -206,9 +203,8 @@ Pitfalls</h1>
 <li><b>Not thread-safe</b> — protect lists yourself if used from ISR / multiple threads.</li>
 <li><b>License is GPL-3.0</b> — copyleft; check compatibility with your product before shipping.</li>
 </ul>
-<hr  />
-<h1><a class="anchor" id="autotoc_md29"></a>
-API overview</h1>
+<h2><a class="anchor" id="autotoc_md10"></a>
+API overview</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Function   </th><th class="markdownTableHeadNone">Role    </th></tr>
@@ -227,9 +223,119 @@ API overview</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>LL_Clear_List</code>   </td><td class="markdownTableBodyNone">Empty list + <code>free</code> nodes   </td></tr>
 </table>
+<h2><a class="anchor" id="autotoc_md11"></a>
+License</h2>
+<p>[GNU GPL v3](LICENSE)</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md31"></a>
-License</h1>
+<h1><a class="anchor" id="autotoc_md13"></a>
+Русский</h1>
+<p>Встраиваемые кольцевые двусвязные списки на C (intrusive) — без выделения памяти внутри библиотеки, узлы статические или динамические, безопасный обход при изменении списка. Для bare-metal и системного кода, где объекты уже существуют (пулы, BSS, арены), а список только связывает указатели.</p>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Зачем LibLL</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Задача   </th><th class="markdownTableHeadNone">LibLL    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Список целых / владение значениями   </td><td class="markdownTableBodyNone">Другой контейнер    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Объекты в статическом пуле / очереди планировщика   </td><td class="markdownTableBodyNone">Да    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>malloc</code> внутри Connect/Disconnect   </td><td class="markdownTableBodyNone">Никогда    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Пустой список без проверок на <code>NULL</code> повсюду   </td><td class="markdownTableBodyNone">Sentinel Stub    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Перенос узла между очередями   </td><td class="markdownTableBodyNone"><code>LL_Change_List</code>   </td></tr>
+</table>
+<p>Идея близка к <code>list.h</code> ядра Linux: небольшая самостоятельная библиотека с тестами.</p>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Быстрый старт</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="LibLL_8h.html">LibLL.h</a>&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line">    <a class="code hl_typedef" href="LibLL_8h.html#a5f14e6a5184581501c20bdc6013732eb">NODE</a> node;      <span class="comment">/* первое поле */</span></div>
+<div class="line">    <span class="keywordtype">int</span>  id;</div>
+<div class="line">} <a class="code hl_struct" href="structTask.html">Task</a>;</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_define" href="LibLL_8h.html#acb779a9c93788ab264eb4e4c7e26b0a8">mCREATE_LIST</a>(ready, ready_tmp);</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structTask.html">Task</a> t1 = {0};</div>
+<div class="line">t1.id = 1;</div>
+<div class="line">mINIT_NODE(&amp;t1.node);</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_function" href="LibLL_8c.html#a8274f49f06aa1cf53309da647eb4b06f">LL_Connect</a>(&amp;ready, &amp;t1.node, &amp;ready_tmp);</div>
+<div class="line"><span class="comment">/* ... */</span></div>
+<div class="line"><a class="code hl_function" href="LibLL_8c.html#a4dace3d699f8e0e8eccc721ef5b64c21">LL_Disconnect</a>(&amp;ready, &amp;t1.node, &amp;ready_tmp);</div>
+</div><!-- fragment --><p>Кратко:</p>
+<ol type="1">
+<li>Поле <code><a class="el" href="LibLL_8h.html#a5f14e6a5184581501c20bdc6013732eb">NODE</a></code> должно быть первым в структуре (или используйте <code>offsetof</code> / <code>container_of</code>).</li>
+<li>Вызывайте <code>mINIT_NODE</code> перед первым <code>LL_Connect</code> / <code>LL_Insert</code>.</li>
+<li>У <b>каждого</b> списка свой курсор <code>tmp</code> (<code>mCREATE_LIST</code> создаёт его).</li>
+<li><code>Connect</code> ≠ выделение памяти. <code>Disconnect</code> ≠ <code>free</code>.</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Сборка</h2>
+<div class="fragment"><div class="line">cmake -S . -B build -DLIBLL_BUILD_EXAMPLES=ON -DLIBLL_BUILD_TESTS=ON</div>
+<div class="line">cmake --build build</div>
+<div class="line">ctest --test-dir build --output-on-failure</div>
+</div><!-- fragment --><p>Запуск примеров:</p>
+<div class="fragment"><div class="line">./build/examples/static_tasks</div>
+<div class="line">./build/examples/ready_blocked</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md17"></a>
+Как зависимость CMake (FetchContent)</h3>
+<div class="fragment"><div class="line">include(FetchContent)</div>
+<div class="line">FetchContent_Declare(libll</div>
+<div class="line">    GIT_REPOSITORY https://github.com/OwlSurf/LibLL.git</div>
+<div class="line">    GIT_TAG        v0.1.0   # зафиксируйте релизный тег</div>
+<div class="line">)</div>
+<div class="line">set(LIBLL_BUILD_TESTS OFF CACHE BOOL &quot;&quot; FORCE)</div>
+<div class="line">set(LIBLL_BUILD_EXAMPLES OFF CACHE BOOL &quot;&quot; FORCE)</div>
+<div class="line">FetchContent_MakeAvailable(libll)</div>
+<div class="line"> </div>
+<div class="line">target_link_libraries(your_app PRIVATE LibLL::LibLL)</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md18"></a>
+Drop-in</h3>
+<p>Скопируйте <code><a class="el" href="LibLL_8c.html" title="Linked list library implementation.">LibLL.c</a></code> + <code><a class="el" href="LibLL_8h.html" title="Linked list library implementation.">LibLL.h</a></code> в свой проект и скомпилируйте <code><a class="el" href="LibLL_8c.html" title="Linked list library implementation.">LibLL.c</a></code> вместе с прошивкой.</p>
+<h2><a class="anchor" id="autotoc_md19"></a>
+Примеры</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Пример   </th><th class="markdownTableHeadNone">Что показывает    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="examples/static_tasks.c"><code>examples/static_tasks.c</code></a>   </td><td class="markdownTableBodyNone">Статические встраиваемые объекты (intrusive), обход, отключение    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="examples/ready_blocked.c"><code>examples/ready_blocked.c</code></a>   </td><td class="markdownTableBodyNone">Перенос задачи между очередями ready / blocked   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md20"></a>
+Подводные камни</h2>
+<ul>
+<li><b>Узел уже в списке</b> — <code>LL_Connect</code> / <code>LL_Insert</code> отклоняют узлы, которые не изолированы (<code>next</code>/<code>prev</code> ≠ self). Сначала <code>mINIT_NODE</code> (или disconnect).</li>
+<li><b>Один <code>tmp</code> на список</b> — общий курсор для разных списков ломает итерацию при insert/disconnect.</li>
+<li><b><code>LL_Clear_List</code></b> — отключает и делает <code>free</code> каждому узлу. Только для узлов из кучи.</li>
+<li><b>Не потокобезопасно</b> — при ISR / нескольких потоках синхронизацию обеспечиваете сами.</li>
+<li><b>Лицензия GPL-3.0</b> — copyleft; проверьте совместимость с вашим продуктом.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Обзор API</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Функция   </th><th class="markdownTableHeadNone">Назначение    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>LL_Connect</code>   </td><td class="markdownTableBodyNone">Добавить узел в конец списка    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>LL_Insert</code>   </td><td class="markdownTableBodyNone">Вставить после узла    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>LL_Disconnect</code> / <code>LL_Disconnect_First</code>   </td><td class="markdownTableBodyNone">Отключить без освобождения памяти    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>LL_Change_List</code> / <code>LL_Change_List_Insert</code>   </td><td class="markdownTableBodyNone">Переместить между списками    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>LL_Find</code>   </td><td class="markdownTableBodyNone">Поиск по предикату    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>LL_ForEach</code>   </td><td class="markdownTableBodyNone">Безопасный обход (через <code>tmp</code>)    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>LL_Clear_List</code>   </td><td class="markdownTableBodyNone">Очистить список + <code>free</code> узлов   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Лицензия</h2>
 <p>[GNU GPL v3](LICENSE) </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
